@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Join MI Beauty 💋</title>
+
+  <!-- Google Font -->
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600&display=swap" rel="stylesheet">
+
+  <!-- Bootstrap -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"/>
+
+  <!-- Glam Styles -->
+  <style>
+    body {
+      font-family: 'Playfair Display', serif;
+      margin: 0;
+      background: linear-gradient(to bottom right, #ffc1e3, #f68084);
+      color: #fff;
+    }
+
+    .hero {
+      padding: 100px 20px 60px;
+      text-align: center;
+      background: url('https://images.unsplash.com/photo-1522337660859-02fbefca4702?auto=format&fit=crop&w=1350&q=80') no-repeat center center/cover;
+      position: relative;
+    }
+
+    .hero::after {
+      content: "";
+      position: absolute;
+      top: 0; left: 0;
+      height: 100%;
+      width: 100%;
+      background: rgba(255, 183, 222, 0.6);
+      backdrop-filter: blur(2px);
+    }
+
+    .hero h1, .hero p {
+      position: relative;
+      z-index: 1;
+    }
+
+    .hero h1 {
+      font-size: 3rem;
+      font-weight: bold;
+      color: #fff;
+      margin-bottom: 1rem;
+    }
+
+    .hero p {
+      font-size: 1.25rem;
+      color: #fff;
+    }
+
+    .signup-section {
+      background-color: #fff;
+      color: #333;
+      padding: 60px 20px;
+      text-align: center;
+    }
+
+    .signup-box {
+      background-color: #fff0f6;
+      border-radius: 1rem;
+      padding: 2rem;
+      max-width: 500px;
+      margin: 0 auto;
+      box-shadow: 0 8px 25px rgba(0,0,0,0.1);
+    }
+
+    .signup-box h2 {
+      color: #c05da3;
+      margin-bottom: 1.5rem;
+    }
+
+    .form-control {
+      background-color: #fff;
+      border: 1px solid #ffc8dd;
+      border-radius: 0.5rem;
+    }
+
+    .form-control:focus {
+      border-color: #c05da3;
+      box-shadow: 0 0 0 0.2rem rgba(192, 93, 163, 0.25);
+    }
+
+    .btn-pink {
+      background-color: #c05da3;
+      color: #fff;
+      font-weight: bold;
+      padding: 0.75rem;
+      border-radius: 8px;
+      font-size: 1.1rem;
+      width: 100%;
+      border: none;
+    }
+
+    .btn-pink:hover {
+      background-color: #a94c90;
+    }
+
+    .footer {
+      background-color: #c05da3;
+      color: #fff;
+      text-align: center;
+      padding: 20px;
+      margin-top: 60px;
+    }
+  </style>
+</head>
+
+<body>
+
+  <!-- HERO SECTION -->
+  <section class="hero">
+    <h1>Glow Up with MI Beauty 💫</h1>
+    <p>Join our glam fam for exclusive access to trends, treats, and tutorials!</p>
+  </section>
+
+  <!-- SIGNUP SECTION -->
+  <section class="signup-section">
+    <div class="signup-box">
+      <h2>Sign Up Now 💖</h2>
+      <form id="signupForm">
+        <div class="mb-3">
+          <input type="text" class="form-control" placeholder="Full Name" required />
+        </div>
+        <div class="mb-3">
+          <input type="email" class="form-control" placeholder="Email Address" required />
+        </div>
+        <div class="mb-3">
+          <input type="password" class="form-control" placeholder="Password" required />
+        </div>
+        <button type="submit" class="btn btn-pink">Sign Me Up 💅</button>
+      </form>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <p>© 2025 MI Beauty. You are born to shine ✨</p>
+  </footer>
+
+  <!-- Script -->
+  <script>
+    document.getElementById("signupForm").addEventListener("submit", function(e) {
+      e.preventDefault();
+      alert("Thanks for signing up, beauty! 💖");
+      this.reset();
+    });
+  </script>
+</body>
+</html>
